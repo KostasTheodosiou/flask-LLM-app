@@ -7,4 +7,4 @@ env
 .venv
 venv
 .cache
-./app/__pycache__
+.gitignore
