@@ -8,3 +8,4 @@ env
 venv
 .cache
 .dockerignore
+./app/__pycache__
