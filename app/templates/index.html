@@ -10,7 +10,17 @@
     <div class="container">
       <div class="header">
         <h1>🤖 LLM Chat Interface</h1>
-        <p>Powered by Llama-2-7B</p>
+        <div class="model-selector">
+          <label for="modelSelect">Model:</label>
+          <select id="modelSelect" onchange="switchModel()">
+            <option value="">Loading models...</option>
+          </select>
+          <span class="model-status" id="modelLoadStatus"></span>
+        </div>
+        <div class="node-info">
+          <span class="node-label">Node:</span>
+          <div class="node-name-display" id="nodeNameDisplay">Loading...</div>
+        </div>
       </div>
 
       <div class="status" id="status"></div>

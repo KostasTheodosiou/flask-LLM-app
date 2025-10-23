@@ -11,7 +11,6 @@ def initialize_app():
         model_thread.daemon = True
         model_thread.start()        
         # Give the model a moment to start loading
-        time.sleep(1)
 
 if __name__ == '__main__':
     initialize_app()
